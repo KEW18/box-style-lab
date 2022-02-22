@@ -5,6 +5,12 @@ body, html {
   margin: 0 auto;
   display: block;
   text-align: center;
+  /*added the background image - no repeat -stopped after 2nd box, difficulty with relative path to the image. Whichever is stated last overrides the previous command*/
+
+  background-repeat: no-repeat;
+  background-size: cover;
+ background:linear-gradient(to right, #FFF, #000);
+ background-image: url(../images/white-wood.jpg);
 }
 
 .container, h1 {
@@ -30,10 +36,14 @@ h4 {
 }
 
 .indifferent {
+  border: 1px solid #bebe0d;
+  box-shadow:  -1px 1px #bebe0d, -2px 2px  #bebe0d, -3px 3px #bebe0d, -4px 4px #bebe0d, -5px 5px #bebe0d;
   background-color: #dddd22;
 }
 
 .dubious {
+  border: 1px solid #862e20;
+  box-shadow:  -1px 1px #862e20, -2px 2px #862e20, -3px 3px #862e20, -4px 4px  #862e20, -5px 5px #862e20;
   background-color: #dd4444;
 }
 
@@ -53,4 +63,11 @@ h4 {
 
 .large {
   width: 303%;
+}
+
+/*New code*/
+
+img {
+  border: 1px solid darkgray;
+  box-sizing: border-box;
 }
